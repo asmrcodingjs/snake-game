@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Poppins;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  background: #2e7d32;
+}
+
+.game-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: #8fbc8f;
+  border-radius: 10px;
+}
+
+.info {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: space-around;
+  width: 300px;
+  height: 40px;
+  background: #556b2f;
+  border-radius: 10px 10px 0 0;
+}
+
+.score,
+.high-score {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: #d2d1d1;
+}
+
+#snake,
+#food {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+
+#snake {
+  background-color: #2e7d32;
+}
+
+#food {
+  background-color: red;
+  border-radius: 100%;
+}
+
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.key-btn {
+  padding: 1px 10px;
+  border: none;
+  outline: none;
+  transition: all ease 1s;
+  border-radius: 5px;
+}
+
+.key-btn:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.4);
+  color: #f4f4f4;
+  border-radius: 10px;
+}
